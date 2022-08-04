@@ -391,7 +391,7 @@ header {
   padding: 8px 12px;
   font-size: 17px;
   line-height: 1.42857143;
-  vertical-align: middle;
+
   border: 2px solid #cccccc;
 }
 .tt-input {
@@ -409,7 +409,7 @@ header {
   padding: 8px 12px;
   font-size: 17px;
   line-height: 1.42857143;
-  vertical-align: middle;
+ 
   border: 2px solid #cccccc;
 }
 .t-button {
@@ -440,7 +440,7 @@ header {
 
   font-size: 20px;
   line-height: 1.42857143;
-  vertical-align: middle;
+  
   border: 2px solid #cccccc;
   border-right-width: 0px;
   padding-left: 30px;
