@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mariela - Webflow E-Commerce website template</title>
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,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"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styde.css" />
+    <link href="https://css.gg/shopping-cart.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- tieu de  -->
+    <header class="box p-fixed">
+      <div class="container">
+        <div class="row j-between a-center">
+          <div class="col-1">
+            <div class="box-logo">
+              <img
+                src="https://assets.website-files.com/5bd86c52b7abc5114b2ed43c/5bd8aad816e1ead4175ca869_Logo.png"
+                alt=""
+                class="logo"
+              />
+            </div>
+          </div>
+          <div class="col-5">
+            <ul class="box-title d-flex j-between">
+              <li class="title">Home</li>
+              <li class="title">About</li>
+              <li class="title">Products</li>
+              <li class="title">Contact me</li>
+              <li class="title">
+                <i class="gg-shopping-cart"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- trang1 -->
+    <div class="box-hello p-105">
+      <div class="box-pr p-relative">
+        <div class="hello-img p-absolute">
+          <img
+            src="https://assets.website-files.com/5bd86c52b7abc5114b2ed43c/5bd8a753b7abc549d52f2255_noah-buscher-1118080-unsplash.jpg"
+            alt=""
+            class="box-img"
+          />
+        </div>
+
+        <div class="letter-flex d-flex j-center f-di p-absolute">
+          <div class="letter-1 color-wh">ABOUT ME</div>
+          <div class="letter-2 color-wh">I'm a trendy Cushion Designer</div>
+          <a href="#" class="box-link color-wh">LEARN MORE</a>
+        </div>
+      </div>
+    </div>
+    <!-- trang2 -->
+    <div class="box-content container">
+      <div class="box-center">
+        <div class="content-newest">I'M A CUSHION DESIGNER</div>
+        <div>
+          <p class="content-newest1">
+            Based in San Francisco, California I design trendy and fashion
+            Cushions, since <br />
+            I have memory I always had a tendency to design and illustration.
+          </p>
+        </div>
+
+        <div>
+          <a href="#" class="w-buttun" style="color: #b99bb6;">LEARN MORE</a>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="row">
+          <div class="col-4">
+            <div class="text-color p-relative">
+              <div class="box-picture p-absolute">
+                <img
+                  src="https://assets.website-files.com/5bd86c52b7abc5114b2ed43c/5bd892e61cab6c8d61313a06_1.png"
+                  alt=""
+                  class="picture"
+                />
+              </div>
+              <div class="Info-1 p-absolute">About me</div>
+              <div class="Info-2 p-absolute">Learn more</div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="text-color p-relative">
+              <div class="box-picture p-absolute">
+                <img
+                  src="https://assets.website-files.com/5bd86c52b7abc5114b2ed43c/5bd892e6e7345f8606c14439_2-p-500.png"
+                  alt=""
+                  class="picture"
+                />
+              </div>
+              <div class="Info-1 p-absolute">My products</div>
+              <div class="Info-2 p-absolute">Learn more</div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="text-color p-relative">
+              <div class="box-picture p-absolute">
+                <img
+                  src="https://assets.website-files.com/5bd86c52b7abc5114b2ed43c/5bd892e6b7abc54c782f11a0_3.png"
+                  alt=""
+                  class="picture"
+                />
+              </div>
+              <div class="Info-1 p-absolute">Contact me</div>
+              <div class="Info-2 p-absolute">Learn more</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- trang3 -->
+    <div class="box-hello p-105">
+      <div class="box-pr p-relative">
+        <div class="hello-img1 p-absolute">
+          <img
+            src="https://assets.website-files.com/5bd86c52b7abc5114b2ed43c/5bd8dbaf557faed0e04aded5_4.png"
+            alt=""
+            class="box-img"
+          />
+        </div>
+
+        <div class="letter-flex1 d-flex j-center f-di p-absolute">
+          <div class="letter-1 color-wh">ABOUT ME</div>
+          <div class="letter-2 color-wh">I'm a trendy Cushion Designer</div>
+          <a href="#" class="box-link color-wh">LEARN MORE</a>
+        </div>
+      </div>
+    </div>
+    <!-- trang4 -->
+    <div class="box-product">
+      <div class="product0 p-105 container">
+        <div class="row a-center">
+          <div class="col-6">
+            <img
+              src="https://assets.website-files.com/5bd86c52b7abc5114b2ed43c/5bd8dbafef82dc4bd8245d41_nathan-fertig-249917-unsplash-p-1080.jpeg"
+              alt=""
+              class="img-product"
+            />
+          </div>
+          <div class="product1 col-6">
+            <div class="content-newest">BEGINNINGS</div>
+            <div>
+              <p class="content-newest2">
+                Credibly innovate granular internal or organic sources whereas
+                high standards in web-readiness. Energistically scale
+                future-proof core competencies vis-a-vis impactful experiences.
+                Dramatically synthesize integrated schemas. with optimal
+                networks.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product0 p-105 container">
+        <div class="row a-center flex-reve">
+          <div class="col-6">
+            <img
+              src="https://assets.website-files.com/5bd86c52b7abc5114b2ed43c/5bd8dbaf49a14257198e81cb_6-p-800.jpeg"
+              alt=""
+              class="img-product"
+            />
+          </div>
+          <div class="product1 col-6">
+            <div class="content-newest">CARRER</div>
+            <div>
+              <p class="content-newest2">
+                Collaboratively administrate turnkey channels whereas virtual
+                e-tailers. Objectively seize scalable metrics whereas proactive
+                e-services seamlessly empower fully researched growth
+                strategies. And interoperable internal or “organic” sources.
+              </p>
+            </div>
+            <div>
+              <a href="#" class="w-buttun" style="color: #b99bb6;"
+                >LEARN MORE</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-105 container">
+        <div class="row a-center">
+          <div class="col-6">
+            <img
+              src="https://assets.website-files.com/5bd86c52b7abc5114b2ed43c/5bd8dbafcf26d38b797ab7a8_julian-hochgesang-795082-unsplash-p-1080.jpeg"
+              alt=""
+              class="img-product"
+            />
+          </div>
+          <div class="product1 col-6">
+            <div class="content-newest">PRODUCTS</div>
+            <div>
+              <p class="content-newest2">
+                Seamlessly empower fully researched growth strategies and
+                interoperable internal or “organic” sources. Credibly innovate
+                granular internal or “organic” sources whereas high standards in
+                web-readiness. Energistically scale future-proof core competence
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- trang5 -->
+    <div class="box-hello p-105">
+      <div class="box-pr p-relative">
+        <div class="hello-img p-absolute">
+          <img
+            src="https://assets.website-files.com/5bd86c52b7abc5114b2ed43c/5bd90a8aef82dc5918248baa_cushion.jpg"
+            alt=""
+            class="box-img"
+          />
+        </div>
+
+        <div class="letter-flex d-flex j-center f-di p-absolute">
+          <div class="letter-1 color-wh">NEW</div>
+          <div class="letter-2 color-wh">Spring Cushion Collection 2019</div>
+          <a href="#" class="box-link color-wh">BUY NOW</a>
+        </div>
+      </div>
+    </div>
+    <!-- trang6 -->
+    <div class="container p-105">
+      <div class="row">
+        <div class="col-4">
+          <div class="box-pillow">
+            <img
+              src="https://assets.website-files.com/5bd8adf923983b6ef049c9fe/5bd9fee8179853822e2c85c0_p-1%2019.48.27-p-500.jpeg"
+              alt=""
+              class="pillow"
+            />
+          </div>
+          <div class="box-name text-center">Plated Cushion</div>
+          <div class="monny text-center">$ 19.99 USD</div>
+        </div>
+
+        <div class="col-4">
+          <div class="box-pillow">
+            <img
+              src="https://assets.website-files.com/5bd8adf923983b6ef049c9fe/5bd8e3f6cf26d34b0b7ac10a_p-2-p-500.jpeg"
+              alt=""
+              class="pillow"
+            />
+          </div>
+          <div class="box-name text-center">Silver Cushion</div>
+          <div class="monny text-center">$ 19.99 USD</div>
+        </div>
+
+        <div class="col-4">
+          <div class="box-pillow">
+            <img
+              src="https://assets.website-files.com/5bd8adf923983b6ef049c9fe/5bd8e347b51929d41cefee85_p-3-p-500.jpeg"
+              alt=""
+              class="pillow"
+            />
+          </div>
+          <div class="box-name text-center">Deep Blue Cushion</div>
+          <div class="monny text-center">$ 19.99 USD</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="box-pillow">
+            <img
+              src="https://assets.website-files.com/5bd8adf923983b6ef049c9fe/5bd8e31c49a14202638e8840_p-4-p-500.jpeg"
+              alt=""
+              class="pillow"
+            />
+          </div>
+          <div class="box-name text-center">Pink Cushion</div>
+          <div class="monny text-center">$ 19.99 USD</div>
+        </div>
+
+        <div class="col-4">
+          <div class="box-pillow">
+            <img
+              src="https://assets.website-files.com/5bd8adf923983b6ef049c9fe/5bd8e2e0f03b7d5cc10349cc_p-5-p-500.jpeg"
+              alt=""
+              class="pillow"
+            />
+          </div>
+          <div class="box-name text-center">Black Cushion</div>
+          <div class="monny text-center">$ 19.99 USD</div>
+        </div>
+
+        <div class="col-4">
+          <div class="box-pillow">
+            <img
+              src="https://assets.website-files.com/5bd8adf923983b6ef049c9fe/5bd8e2a838042158384fff20_p-6-p-500.jpeg"
+              alt=""
+              class="pillow"
+            />
+          </div>
+          <div class="box-name text-center">Green Cushion</div>
+          <div class="monny text-center">$ 19.99 USD</div>
+        </div>
+      </div>
+
+      <div>
+        <a
+          href="#"
+          class="w-buttun"
+          style="color: #b99bb6; margin-left: 1000px; margin-top: 20px;"
+          >BUY MORE</a
+        >
+      </div>
+    </div>
+    <!-- trang thông tin -->
+    <div class="bg-tt">
+      <div class="container p-105">
+        <div class="row">
+          <div class="col-4">
+            <div class="box-email">
+              <p class="t-title">email</p>
+              <p class="c-title">support@website.com</p>
+            </div>
+
+            <div class="box-phone">
+              <div class="t-title">phone</div>
+              <p class="c-title">800-123-456</p>
+            </div>
+
+            <div>
+              <p class="t-title">address</p>
+              <p class="c-title">
+                23 Evergreen Street, San Francisco, California USA
+              </p>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="box-email">
+              <p class="t-title">ADDRESS</p>
+              <p class="c-title">
+                Drop us your message and I'll get back to you as soon as
+                possible.
+              </p>
+            </div>
+
+            <div class="contact-form">
+              <div class="row flex-wrap">
+                <div class="col-6">
+                  <div class="form-control d-flex flex-column">
+                    <input
+                      class="t-input"
+                      id="name"
+                      type="text"
+                      placeholder="your name"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="form-control d-flex flex-column">
+                    <input
+                      class="t-input"
+                      id="company"
+                      type="text"
+                      placeholder="your company"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="form-control d-flex flex-column">
+                    <input
+                      class="t-input"
+                      id="email"
+                      type="email"
+                      placeholder="your email"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="form-control d-flex flex-column">
+                    <input
+                      class="t-input"
+                      id="number"
+                      type="text"
+                      placeholder="your number"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="form-control d-flex flex-column">
+                    <textarea
+                      class="tt-input"
+                      name=""
+                      id="message"
+                      cols="30"
+                      rows="10"
+                      placeholder="your message"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="c-button">
+              <button class="t-button">Let's talk</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- trang7 -->
+    <div class="t-name container">
+      <div class="box-center">
+        <div class="content-newest">NEWSLETTER</div>
+        <div>
+          <p class="content-newest1">
+            Get promotions & updates!
+          </p>
+        </div>
+
+        <div class="c-name d-flex j-center">
+          <div>
+            <input
+              class="m-input"
+              type="text"
+              placeholder="Your name"
+              style="border-right-width: 0px;"
+            />
+          </div>
+
+          <div>
+            <input class="m-input" type="email" placeholder="Your email" />
+          </div>
+
+          <div>
+            <button class="mm-input">SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end -->
+    <div class="container">
+      <div class="d-flex j-between">
+        <div class="row">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
